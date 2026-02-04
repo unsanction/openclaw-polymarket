@@ -1,0 +1,43 @@
+{
+  "name": "@openclaw/polymarket",
+  "version": "1.0.0",
+  "description": "OpenClaw plugin for Polymarket prediction markets - browse markets, place orders, manage positions",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "openclaw",
+    "polymarket",
+    "prediction-markets",
+    "trading",
+    "crypto"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mcp-polymarket": "file:../mcp-polymarket-openclaw",
+    "@polymarket/clob-client": "^5.2.1",
+    "@sinclair/typebox": "^0.32.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  },
+  "peerDependencies": {
+    "openclaw": "*"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  }
+}

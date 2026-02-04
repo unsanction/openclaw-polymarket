@@ -1,0 +1,70 @@
+{
+  "id": "polymarket",
+  "name": "Polymarket",
+  "displayName": "Polymarket",
+  "description": "Trade on Polymarket prediction markets - browse markets, place orders, manage positions",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "privateKey": {
+        "type": "string",
+        "description": "Wallet private key for signing transactions"
+      },
+      "funder": {
+        "type": "string",
+        "description": "Proxy wallet address (Polymarket deposit address). If not set, derived from privateKey."
+      },
+      "apiKey": {
+        "type": "string",
+        "description": "Polymarket API key (optional, auto-derived from privateKey)"
+      },
+      "apiSecret": {
+        "type": "string",
+        "description": "Polymarket API secret (optional, auto-derived from privateKey)"
+      },
+      "passphrase": {
+        "type": "string",
+        "description": "Polymarket API passphrase (optional, auto-derived from privateKey)"
+      },
+      "chainId": {
+        "type": "number",
+        "description": "Chain ID (default: 137 for Polygon)",
+        "default": 137
+      },
+      "readonly": {
+        "type": "boolean",
+        "description": "Disable trading tools (place_order, cancel_order)",
+        "default": false
+      }
+    }
+  },
+  "uiHints": {
+    "privateKey": {
+      "label": "Private Key",
+      "placeholder": "0x...",
+      "sensitive": true
+    },
+    "funder": {
+      "label": "Funder/Proxy Wallet",
+      "placeholder": "0x..."
+    },
+    "apiKey": {
+      "label": "API Key",
+      "sensitive": true
+    },
+    "apiSecret": {
+      "label": "API Secret",
+      "sensitive": true
+    },
+    "passphrase": {
+      "label": "Passphrase",
+      "sensitive": true
+    },
+    "readonly": {
+      "label": "Read-only Mode"
+    }
+  }
+}
