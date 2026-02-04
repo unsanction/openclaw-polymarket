@@ -1,6 +1,6 @@
 {
   "name": "@c0pilot/openclaw-polymarket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenClaw plugin for Polymarket prediction markets - browse markets, place orders, manage positions",
   "type": "module",
   "main": "dist/index.js",
