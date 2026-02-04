@@ -91,7 +91,6 @@ export async function activate(ctx: PluginContext): Promise<void> {
         },
       });
 
-      log(ctx, "info", `Registered tool: ${tool.name}`);
       registeredCount++;
     }
 

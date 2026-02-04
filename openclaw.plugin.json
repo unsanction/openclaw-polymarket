@@ -1,6 +1,6 @@
 {
-  "id": "polymarket",
-  "name": "Polymarket",
+  "id": "openclaw-polymarket",
+  "name": "openclaw-polymarket",
   "displayName": "Polymarket",
   "description": "Trade on Polymarket prediction markets - browse markets, place orders, manage positions",
   "version": "1.0.0",
