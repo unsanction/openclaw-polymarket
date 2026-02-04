@@ -25,7 +25,7 @@ openclaw plugins install -l .
 ### From npm (when published)
 
 ```bash
-openclaw plugins install @openclaw/polymarket
+openclaw plugins install @c0pilot/openclaw-polymarket
 ```
 
 ## Configuration
