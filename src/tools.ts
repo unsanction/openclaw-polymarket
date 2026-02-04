@@ -1,6 +1,6 @@
 import { Type } from "@sinclair/typebox";
 import { Side as ClobSide, AssetType } from "@polymarket/clob-client";
-import { ClobClientWrapper } from "mcp-polymarket/client";
+import { ClobClientWrapper } from "@c0pilot/mcp-polymarket/client";
 
 // ============================================================================
 // Type Definitions

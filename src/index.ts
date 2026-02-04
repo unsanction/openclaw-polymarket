@@ -1,5 +1,5 @@
-import { createConfig } from "mcp-polymarket/config";
-import { ClobClientWrapper } from "mcp-polymarket/client";
+import { createConfig } from "@c0pilot/mcp-polymarket/config";
+import { ClobClientWrapper } from "@c0pilot/mcp-polymarket/client";
 import { createPolymarketTools } from "./tools.js";
 
 /**
@@ -106,6 +106,6 @@ export async function deactivate(): Promise<void> {
 }
 
 // Also export for direct use
-export { createConfig } from "mcp-polymarket/config";
-export { ClobClientWrapper } from "mcp-polymarket/client";
+export { createConfig } from "@c0pilot/mcp-polymarket/config";
+export { ClobClientWrapper } from "@c0pilot/mcp-polymarket/client";
 export { createPolymarketTools } from "./tools.js";

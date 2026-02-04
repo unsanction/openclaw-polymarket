@@ -1,12 +1,14 @@
 {
-  "name": "@openclaw/polymarket",
+  "name": "@c0pilot/openclaw-polymarket",
   "version": "1.0.0",
   "description": "OpenClaw plugin for Polymarket prediction markets - browse markets, place orders, manage positions",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "openclaw.plugin.json",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc",
@@ -19,12 +21,25 @@
     "polymarket",
     "prediction-markets",
     "trading",
-    "crypto"
+    "crypto",
+    "polygon",
+    "ai-agent"
   ],
-  "author": "",
+  "author": "c0pilot",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c0pilot/openclaw-polymarket"
+  },
+  "homepage": "https://github.com/c0pilot/openclaw-polymarket#readme",
+  "bugs": {
+    "url": "https://github.com/c0pilot/openclaw-polymarket/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
-    "mcp-polymarket": "file:../mcp-polymarket-openclaw",
+    "@c0pilot/mcp-polymarket": "^1.0.0",
     "@polymarket/clob-client": "^5.2.1",
     "@sinclair/typebox": "^0.32.0"
   },
@@ -34,10 +49,5 @@
   },
   "peerDependencies": {
     "openclaw": "*"
-  },
-  "openclaw": {
-    "extensions": [
-      "./dist/index.js"
-    ]
   }
 }
