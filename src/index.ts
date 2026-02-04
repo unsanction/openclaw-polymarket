@@ -93,8 +93,6 @@ export async function activate(ctx: PluginContext): Promise<void> {
 
       registeredCount++;
     }
-
-    log(ctx, "info", `Polymarket plugin activated with ${registeredCount} tools`);
   } catch (error) {
     log(ctx, "error", `Failed to initialize: ${error instanceof Error ? error.message : String(error)}`);
   }
